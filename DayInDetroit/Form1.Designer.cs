@@ -49,23 +49,24 @@
             // 
             this.imageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBox.Location = new System.Drawing.Point(74, 123);
+            this.imageBox.Location = new System.Drawing.Point(108, 117);
             this.imageBox.Margin = new System.Windows.Forms.Padding(2);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(648, 225);
+            this.imageBox.Size = new System.Drawing.Size(233, 225);
             this.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imageBox.TabIndex = 17;
             this.imageBox.TabStop = false;
+            this.imageBox.Click += new System.EventHandler(this.imageBox_Click);
             // 
             // option2Label
             // 
             this.option2Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.option2Label.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Label.ForeColor = System.Drawing.Color.White;
-            this.option2Label.Location = new System.Drawing.Point(583, 386);
+            this.option2Label.Location = new System.Drawing.Point(424, 295);
             this.option2Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.option2Label.Name = "option2Label";
-            this.option2Label.Size = new System.Drawing.Size(153, 23);
+            this.option2Label.Size = new System.Drawing.Size(172, 23);
             this.option2Label.TabIndex = 16;
             this.option2Label.Click += new System.EventHandler(this.option2Label_Click);
             // 
@@ -74,7 +75,7 @@
             this.option1Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.option1Label.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Label.ForeColor = System.Drawing.Color.White;
-            this.option1Label.Location = new System.Drawing.Point(345, 386);
+            this.option1Label.Location = new System.Drawing.Point(424, 217);
             this.option1Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.option1Label.Name = "option1Label";
             this.option1Label.Size = new System.Drawing.Size(172, 23);
@@ -83,20 +84,19 @@
             // 
             // outputLabel
             // 
-            this.outputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.outputLabel.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(100, 18);
+            this.outputLabel.Location = new System.Drawing.Point(44, 19);
             this.outputLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(590, 82);
+            this.outputLabel.Size = new System.Drawing.Size(620, 82);
             this.outputLabel.TabIndex = 14;
             this.outputLabel.Click += new System.EventHandler(this.outputLabel_Click);
             // 
             // option2Button
             // 
             this.option2Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.option2Button.Location = new System.Drawing.Point(540, 376);
+            this.option2Button.Location = new System.Drawing.Point(381, 285);
             this.option2Button.Margin = new System.Windows.Forms.Padding(2);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(39, 32);
@@ -108,7 +108,7 @@
             // option1Button
             // 
             this.option1Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.option1Button.Location = new System.Drawing.Point(302, 376);
+            this.option1Button.Location = new System.Drawing.Point(381, 207);
             this.option1Button.Margin = new System.Windows.Forms.Padding(2);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(39, 32);
@@ -122,7 +122,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(104, 385);
+            this.label1.Location = new System.Drawing.Point(424, 140);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 23);
@@ -132,7 +132,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 375);
+            this.pictureBox1.Location = new System.Drawing.Point(381, 130);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 32);
@@ -148,7 +148,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(540, 375);
+            this.button1.Location = new System.Drawing.Point(381, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 34);
             this.button1.TabIndex = 20;
@@ -161,7 +161,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(302, 376);
+            this.button2.Location = new System.Drawing.Point(381, 207);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(39, 33);
             this.button2.TabIndex = 21;
@@ -174,7 +174,7 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(61, 375);
+            this.button3.Location = new System.Drawing.Point(381, 130);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(39, 33);
             this.button3.TabIndex = 22;
@@ -186,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(689, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
