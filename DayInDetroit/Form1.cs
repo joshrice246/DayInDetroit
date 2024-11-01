@@ -256,7 +256,7 @@ namespace DayInDetroit
 
         private void imageBox_Click(object sender, EventArgs e)
         {
-            //group of men wearing all black streetwear close up with weapons dark dirty alley illuminated by moonlight
+          
         }
     }
     }
