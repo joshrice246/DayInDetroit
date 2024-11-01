@@ -58,7 +58,11 @@ namespace DayInDetroit
                 {
                     page = 11;
                 }
-                
+                else if (page == 99)
+                {
+                    Refresh();
+                    Close();
+                }
                 displayPage();
 
             }
@@ -123,7 +127,11 @@ namespace DayInDetroit
                 imageBox.Image = Properties.Resources.freedom;
                 page = 99;
             }
-
+            else if (page == 99)
+            {
+                
+                page = 1;
+            }
             displayPage();
         }
 
@@ -156,19 +164,19 @@ namespace DayInDetroit
                 case 4:
                     imageBox.Image = Properties.Resources.cannon;
                     outputLabel.Text = "you hear loud rattling as you run away, you decide to turn around and you see a large cannon being lit by the group of men ...BANG";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 5:
                     imageBox.Image = Properties.Resources.death;
                     outputLabel.Text = "they took your shoes anyways and you step on glass and die";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 6:
                     imageBox.Image = Properties.Resources.death;
                     outputLabel.Text = "you run as fast as possible and trip, they surround you and light a comically large stick of tnt at your feet.";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 7:
@@ -179,7 +187,7 @@ namespace DayInDetroit
                 case 8:
                     imageBox.Image = Properties.Resources.death;
                     outputLabel.Text = "they take it as an insult and rob you for all your clothes";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 9:
@@ -191,26 +199,26 @@ namespace DayInDetroit
                 case 10:
                     imageBox.Image = Properties.Resources.money;
                     outputLabel.Text = "you rob a bank with the men you just joined and gain a sizable amount of money,freedom";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 11:
                     imageBox.Image = Properties.Resources.death;
                     outputLabel.Text = "you say no and start walking away, you hear them chase after you, you run for your life and barely escape them, as you walk down the brightly lit streets you see a car roll up next to you, its the men from earlier.....you hear a gun being racked back BANG";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 12:
                     imageBox.Image = Properties.Resources.death;
                     outputLabel.Text = "you lose and get stabbed";
-                    option1Label.Text = "";
+                    option1Label.Text = "press";
                     option2Label.Text = "";
                     break;
                 case 99:
                     imageBox.Image = Properties.Resources.darkAlley;
                     outputLabel.Text = "thanks wasting your time";
-                    option1Label.Text = "";
-                    option2Label.Text = "";
+                    option1Label.Text = "restart";
+                    option2Label.Text = "close";
                     break;
                 default:
                     break;
